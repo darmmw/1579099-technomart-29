@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Дарья Меледина](https://up.htmlacademy.ru/htmlcss/29/user/1579099).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин] (https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
