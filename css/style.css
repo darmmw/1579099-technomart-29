@@ -26,15 +26,14 @@
 
   }
    /*HEADER*/
-
+  .header {
+    font-family: Cuprum, Arial, sans-serif;
+  }
   .header__logo {
     background-color: var(--basic-red);
+    padding: 12px 57px 17px 55px;
     width: 108px;
     height: 18px;
-    padding-left: 55px;
-    padding-right: 57px;
-    padding-top: 12px;
-    padding-bottom: 17px;
   }
 
   .header__top {
@@ -45,23 +44,18 @@
 
   .header__search {
     background-color: var(--basic-dark-blue);
-    font-family: Cuprum, Arial, sans-serif;
   }
 
   .header__selection {
     list-style: none;
     text-decoration: none;
     color: var(--basic-white);
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 18px;
   }
 
   .header__selection-order {
     background-color: var(--basic-green);
-    padding-left: 19px;
-    padding-right: 16px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding: 9px 16px 9px 19px;
   }
 
   .header__container {
@@ -72,7 +66,6 @@
 
   .header__description {
      color: var(--basic-red);
-     font-family: Cuprum, Arial, sans-serif;
      font-size: 16px;
      font-style: italic;
      line-height: 23px;
@@ -81,14 +74,12 @@
    .header__tel {
      color: var(--basic-red);
      text-decoration: none;
-     font-family: Cuprum, Arial, sans-serif;
      font-weight: 700;
      font-size: 21px;
      line-height: 30px;
    }
 
    .header__address {
-     font-family: Cuprum, Arial, sans-serif;
      font-size: 14px;
      text-align: center;
      line-height: 24px;
@@ -99,28 +90,20 @@
      background-color: var(--basic-white);
      text-decoration: none;
      color: var(--basic-black);
-     font-family: Cuprum, Arial, sans-serif;
      font-size: 21px;
      text-align: center;
      line-height: 21px;
-     padding-left: 19px;
-     padding-right: 27px;
-     padding-top: 12px;
-     padding-bottom: 12px;
+     padding: 12px 27px 12px 19px;
    }
 
   .header__registration {
     background-color: var(--basic-white);
     text-decoration: none;
     color: var(--basic-black);
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 21px;
     text-align: center;
     line-height: 21px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 24px;
   }
 
   .header__navigation {
@@ -133,16 +116,16 @@
   .header__navigation-item {
     text-decoration: none;
     color: var(--basic-white);
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
   }
 
    /*CARDS*/
-
+   .card {
+     font-family: Cuprum, Arial, sans-serif;
+   }
    .card__section {
      text-decoration: none;
-     font-family: Cuprum, Arial, sans-serif;
      width: 300px;
      height: 123px;
      color: var(--basic-white);
@@ -184,10 +167,7 @@
      font-size: 14px;
      line-height: 18px;
      text-align: center;
-     padding-left: 23px;
-     padding-right: 24px;
-     padding-top: 10px;
-     padding-bottom: 10px;
+     padding: 10px 24px 10px 23px;
    }
 
    .card__section-button-orange {
@@ -212,7 +192,6 @@
 
    .card__section-big {
      text-decoration: none;
-     font-family: Cuprum, Arial, sans-serif;
      width: 620px;
      height: 266px;
      color: var(--basic-white);
@@ -227,7 +206,6 @@
 
   .card__section-big_phrase {
      width: 620px;
-     font-family: Cuprum, Arial, sans-serif;
      color: var(--basic-white);
      font-size: 18px;
      line-height: 24px;
@@ -236,17 +214,13 @@
 
   .card__section-big_button-red {
      background-color: var(--basic-red);
-     font-family: Cuprum, Arial, sans-serif;
      color: var(--basic-white);
      width: 192px;
      height: 38px;
      font-size: 14px;
      line-height: 18px;
      text-align: center;
-     padding-left: 46px;
-     padding-right: 46px;
-     padding-top: 11px;
-     padding-bottom: 9px;
+     padding: 11px 46px 9px;
    }
 
   /*POPULAR PRODUCTS*/
@@ -256,10 +230,10 @@
     width: 940px;
     height: 89px;
     text-decoration: none;
+    font-family: Cuprum, Arial, sans-serif;
   }
 
   .popular__items-name {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-dark-gray);
@@ -267,7 +241,6 @@
 
   .popular__items-button {
     background-color: var(--basic-red);
-    font-family: Cuprum, Arial, sans-serif;
     width: 192px;
     height: 38px;
     color: var(--basic-white);
@@ -293,7 +266,6 @@
   }
 
   .product__old-price {
-    font-family: PT Sans, Arial, sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
@@ -304,7 +276,6 @@
 
   .product__price_button {
     background-color: var(--basic-red);
-    font-family: PT Sans, Arial, sans-serif;
     width: 141px;
     height: 38px;
     color: var(--basic-white);
@@ -375,9 +346,11 @@
   }
 
   /*COMPANY*/
+  .company {
+    font-family: Cuprum, Arial, sans-serif;
+  }
 
   .company__name {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-black);
@@ -394,7 +367,6 @@
 
   .company__transport {
     list-style: none;
-    font-family: Cuprum, Arial, sans-serif;
     line-height: 24px;
     font-size: 18px;
     color: var(--basic-black);
@@ -409,7 +381,6 @@
     width: 220px;
     height: 38px;
     background-color: var(--basic-red);
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -417,6 +388,9 @@
   }
 
   /*FOOTER*/
+  .footer {
+    font-family: Cuprum, Arial, sans-serif;
+  }
 
   .footer__top {
     background-color: var(--basic-dark-gray);
@@ -430,12 +404,10 @@
     background-color: var(--basic-red);
     color: var(--basic-white);
     text-align: center;
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 28px;
   }
 
   .footer__address {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: var(--basic-gray3);
@@ -464,7 +436,6 @@
   }
 
   .footer__copyright {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-white);
@@ -475,7 +446,6 @@
   }
 
   .footer__feedback {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-white);
@@ -486,8 +456,7 @@
     color: var(--basic-yellow);
   }
 
-
-                                    /*CATALOG*/
+    /*CATALOG*/
 
     .page-nav {
       list-style: none;
@@ -512,19 +481,19 @@
     }
 
       /*FILTER*/
-
+    .filter {
+      font-family: PT Sans, Arial, sans-serif;
+    }
     .filter__name {
       width: 220px;
       height: 38px;
       background-color: var(--basic-light-pink);
-      font-family: PT Sans, Arial, sans-serif;
       font-size: 13px;
       line-height: 18px;
       color: var(--basic-black);
     }
 
     .filter__item {
-      font-family: PT Sans, Arial, sans-serif;
       font-weight: 700;
       font-size: 17px;
       line-height: 30px;
@@ -536,7 +505,6 @@
       width: 220px;
       height: 38px;
       background-color: var(--basic-white);
-      font-family: PT Sans, Arial, sans-serif;
       font-size: 13px;
       line-height: 18px;
       text-align: center;
@@ -584,10 +552,7 @@
       line-height: 18px;
       text-align: center;
       color: var(--basic-black);
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 10px 15px;
     }
 
     .switch-pages_next {
