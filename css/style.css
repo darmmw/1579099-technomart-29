@@ -116,8 +116,7 @@
   .header__navigation {
     list-style: none;
     background-color: var(--basic-dark-blue);
-    width: 940px;
-    height: 60px;
+    padding: 16px 53px 20px 53px;
     display: flex;
   }
   .header__navigation-item {
@@ -135,14 +134,12 @@
   .card-content {
     margin-top: 60px;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
   }
   .card__section {
     text-decoration: none;
-    width: 300px;
-    height: 123px;
     color: var(--basic-white);
     font-weight: 700;
     font-size: 24px;
@@ -150,21 +147,27 @@
   }
   .card__section-orange {
     background-color: var(--basic-orange);
+    grid-area: 1 / 1 / 2 / 2;
   }
   .card__section-blue {
     background-color: var(--basic-blue);
+    grid-area: 1 / 2 / 2 / 3;
   }
   .card__section-purple {
     background-color: var(--basic-purple);
+    grid-area: 1 / 3 / 2 / 4;
   }
   .card__section-green {
     background-color: var(--basic-light-green);
+    grid-area: 2 / 3 / 3 / 4;
   }
   .card__section-light-orange {
     background-color: var(--basic-light-orange);
+    grid-area: 3 / 3 / 4 / 4;
   }
   .card__section-gray {
     background-color: var(--basic-gray);
+    grid-area: 2 / 1 / 4 / 3;
   }
   .card__section-button {
     font-family: Cuprum, Arial, sans-serif;
@@ -205,7 +208,6 @@
     background-color: var(--basic-gray);
   }
   .card__section-big_phrase {
-    width: 620px;
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
@@ -214,8 +216,6 @@
   .card__section-big_button-red {
     background-color: var(--basic-red);
     color: var(--basic-white);
-    width: 192px;
-    height: 38px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -237,8 +237,7 @@
   }
   .popular__items-button {
     background-color: var(--basic-red);
-    width: 192px;
-    height: 38px;
+    padding: 11px 24px 9px;
     color: var(--basic-white);
     font-size: 14px;
     line-height: 18px;
@@ -274,8 +273,7 @@
   }
   .product__price_button {
     background-color: var(--basic-red);
-    width: 141px;
-    height: 38px;
+    padding: 10px 44px 10px 32px;
     color: var(--basic-white);
     font-weight: 700;
     font-size: 17px;
@@ -293,7 +291,6 @@
   .provider__item {
     text-decoration: none;
     width: 220px;
-    height: 145px;
   }
   .provider-content {
     display: grid;
@@ -305,7 +302,6 @@
 
   .service {
     background-color: var(--basic-background);
-    margin-
   }
   .service__name {
     font-family: Cuprum, Arial, sans-serif;
@@ -320,12 +316,13 @@
     line-height: 24px;
   }
   .vertical-tab {
-    width: 240px;
-    height: 61px;
     font-family: Cuprum, Arial, sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-rows: repeat(3, 61px);
   }
   .vertical-tab_active {
     background-color: var(--basic-white);
@@ -346,9 +343,9 @@
   }
   .company-content {
     display: grid;
-    grid-template-columns: 470px 470px;
-    grid-template-rows: 356px;
-    margin: 70px 130px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 150px;
   }
   .company__name {
     font-size: 30px;
@@ -356,8 +353,6 @@
     color: var(--basic-black);
   }
   .company__description {
-    width: 460px;
-    height: 147px;
     font-family: PT Sans, Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -374,13 +369,17 @@
   }
   .company__button {
     text-decoration: none;
-    width: 220px;
-    height: 38px;
     background-color: var(--basic-red);
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     color: var(--basic-white);
+  }
+  .company__button-1 {
+    padding: 11px 40px 9px 39px;
+  }
+  .company__button-1 {
+    padding: 11px 61px 9px 61px;
   }
 
   /*FOOTER*/
@@ -393,7 +392,7 @@
   }
   .footer__logo {
     width: 220px;
-    height: 68px;
+    padding: 20px 41px 25px;
     background-color: var(--basic-red);
     color: var(--basic-white);
     text-align: center;
