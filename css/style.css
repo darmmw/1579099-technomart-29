@@ -135,7 +135,7 @@
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /*grid-template-rows: repeat(3, 1fr);*/
     gap: 20px;
   }
   .card__section {
@@ -144,6 +144,9 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+  }
+  .card__section h3 {
+    margin: 0;
   }
   .card__section-orange {
     background-color: var(--basic-orange);
@@ -172,13 +175,12 @@
   .card__section-button {
     font-family: Cuprum, Arial, sans-serif;
     color: var(--basic-white);
-    width: 135px;
-    height: 38px;
     opacity: 30%;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     padding: 10px 24px 10px 23px;
+    margin: 0;
   }
   .card__section-button-orange {
     background-color: var(--basic-orange);
@@ -197,12 +199,12 @@
   }
   .card__section-big {
     text-decoration: none;
-    width: 620px;
-    height: 266px;
     color: var(--basic-white);
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
   }
   .card__section-big_gray {
     background-color: var(--basic-gray);
@@ -252,15 +254,13 @@
     text-align: center;
     color: var(--basic-black);
   }
-  .product-content {
+  .product-content-main {
     display: grid;
-    gap: 20px;
-    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    grid-column-gap: 20px;
   }
   .product__img {
-    width: 127px;
-    height: 112px;
     background-color: var(--basic-light-gray);
   }
   .product__old-price {
@@ -286,11 +286,9 @@
   .provider {
     background-color: var(--basic-light-light-gray);
     list-style: none;
-    margin-top: 70px;
   }
   .provider__item {
     text-decoration: none;
-    width: 220px;
   }
   .provider-content {
     display: grid;
