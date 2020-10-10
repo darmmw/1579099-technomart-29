@@ -37,15 +37,19 @@
     width: 940px;
     margin: 0 auto;
   }
+  .visually-hidden {
+    display: none;
+  }
   .header {
     font-family: Cuprum, Arial, sans-serif;
   }
-  .header__logo {
+  .logo {
     background-color: var(--basic-red);
     padding: 12px 57px 17px 55px;
     display: inline-block;
     margin: 0;
     color: var(--basic-white);
+    text-transform: uppercase;
   }
   .header__top {
     background-color: var(--basic-dark-blue);
@@ -131,46 +135,44 @@
   .card {
     font-family: Cuprum, Arial, sans-serif;
   }
-  .card-content {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /*grid-template-rows: repeat(3, 1fr);*/
-    gap: 20px;
-  }
-  .card__section {
+  .card__section a {
     text-decoration: none;
     color: var(--basic-white);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
   }
   .card__section h3 {
     margin: 0;
   }
-  .card__section-orange {
+  .card__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .card__section_orange {
     background-color: var(--basic-orange);
     grid-area: 1 / 1 / 2 / 2;
   }
-  .card__section-blue {
+  .card__section_blue {
     background-color: var(--basic-blue);
     grid-area: 1 / 2 / 2 / 3;
   }
-  .card__section-purple {
+  .card__section_purple {
     background-color: var(--basic-purple);
     grid-area: 1 / 3 / 2 / 4;
   }
-  .card__section-green {
+  .card__section_green {
     background-color: var(--basic-light-green);
     grid-area: 2 / 3 / 3 / 4;
   }
-  .card__section-light-orange {
+  .card__section_light-orange {
     background-color: var(--basic-light-orange);
     grid-area: 3 / 3 / 4 / 4;
   }
-  .card__section-gray {
+  .card__section_gray {
     background-color: var(--basic-gray);
-    grid-area: 2 / 1 / 4 / 3;
   }
   .card__section-button {
     font-family: Cuprum, Arial, sans-serif;
@@ -181,23 +183,24 @@
     text-align: center;
     padding: 10px 24px 10px 23px;
     margin: 0;
+    text-transform: uppercase;
   }
-  .card__section-button-orange {
+  .card__section-button_orange {
     background-color: var(--basic-orange);
   }
-  .card__section-button-blue {
+  .card__section-button_blue {
     background-color: var(--basic-blue);
   }
-  .card__section-button-purple {
+  .card__section-button_purple {
     background-color: var(--basic-purple);
   }
-  .card__section-button-green {
+  .card__section-button_green {
     background-color: var(--basic-light-green);
   }
-  .card__section-button-light-orange {
+  .card__section_light-orange {
     background-color: var(--basic-light-orange);
   }
-  .card__section-big {
+  .card__section_big {
     text-decoration: none;
     color: var(--basic-white);
     font-weight: 700;
@@ -205,48 +208,56 @@
     line-height: 36px;
     grid-column: 1 / 3;
     grid-row: 2 / 4;
+    text-transform: uppercase;
   }
-  .card__section-big_gray {
+  .card__section_big-gray {
     background-color: var(--basic-gray);
+    grid-area: 2 / 1 / 4 / 3;
   }
-  .card__section-big_phrase {
+  .card__section_big-phrase {
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
     background-color: var(--basic-gray);
   }
-  .card__section-big_button-red {
+  .card__section_big-button-red {
     background-color: var(--basic-red);
     color: var(--basic-white);
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     padding: 11px 46px 9px;
+    text-transform: uppercase;
   }
 
   /*POPULAR PRODUCTS*/
 
-  .popular__items {
+  .popular {
     background-color: var(--basic-light-light-gray);
     text-decoration: none;
     font-family: Cuprum, Arial, sans-serif;
     margin-top: 70px;
+    text-transform: uppercase;
   }
-  .popular__items-name {
+  .popular__name {
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-dark-gray);
   }
-  .popular__items-button {
+  .popular__button {
     background-color: var(--basic-red);
     padding: 11px 24px 9px;
     color: var(--basic-white);
     font-size: 14px;
     line-height: 18px;
     text-align: center;
+    text-transform: uppercase;
   }
-  .product-item {
+  .product__item-card {
     text-decoration: none;
+    color: var(--basic-black);
+  }
+  .product__item {
     list-style: none;
     font-family: PT Sans, Arial, sans-serif;
     font-weight: 700;
@@ -254,16 +265,16 @@
     text-align: center;
     color: var(--basic-black);
   }
-  .product-content-main {
+  .product__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
   }
-  .product__img {
+  .product__item-img {
     background-color: var(--basic-light-gray);
   }
-  .product__old-price {
+  .product__item-old-price {
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
@@ -271,7 +282,7 @@
     color: var(--basic-gray2);
     text-decoration-line: line-through;
   }
-  .product__price_button {
+  .product__item-price-button {
     background-color: var(--basic-red);
     padding: 10px 44px 10px 32px;
     color: var(--basic-white);
@@ -349,6 +360,7 @@
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-black);
+    text-transform: uppercase;
   }
   .company__description {
     font-family: PT Sans, Arial, sans-serif;
@@ -372,6 +384,7 @@
     line-height: 18px;
     text-align: center;
     color: var(--basic-white);
+    text-transform: uppercase;
   }
   .company__button-1 {
     padding: 11px 40px 9px 39px;
@@ -388,32 +401,27 @@
   .footer__top {
     background-color: var(--basic-dark-gray);
   }
-  .footer__logo {
-    width: 220px;
-    padding: 20px 41px 25px;
-    background-color: var(--basic-red);
-    color: var(--basic-white);
-    text-align: center;
-    font-size: 28px;
-  }
   .footer__address {
     font-size: 16px;
     line-height: 24px;
     color: var(--basic-gray3);
   }
-  .footer__nav_row-one {
-    text-decoration: none;
-    list-style: none;
+  .footer__nav {
+    display: flex;
+  }
+  .footer__nav-row1 a {
     color: var(--basic-gray3);
-    display: flex;
   }
-  .footer__nav_row-two {
-    text-decoration: none;
-    list-style: none;
+  .footer__nav-row2 a {
     color: var(--basic-yellow);
-    display: flex;
   }
-  .footer__social {
+  .footer__nav-list {
+    list-style: none;
+  }
+  .footer__nav-item {
+    text-decoration: none;
+  }
+  .footer__social_button {
     list-style: none;
   }
   .footer__down {
@@ -443,13 +451,13 @@
 
   .page-nav {
     list-style: none;
-    text-decoration: none;
   }
   .page-nav__item {
     font-family: PT Sans, Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-black);
+    text-decoration: none;
   }
   .punchers {
     background-color: var(--basic-light-blue);
@@ -464,6 +472,7 @@
 
   .filter {
     font-family: PT Sans, Arial, sans-serif;
+    text-transform: uppercase;
   }
   .filter__name {
     background-color: var(--basic-light-pink);
@@ -480,7 +489,7 @@
   }
   .filter__button {
     text-decoration: none;
-    padding: 10px 79.57px 10px 78.43px;
+    padding: 10px 79px 10px 78px;
     background-color: var(--basic-white);
     font-size: 13px;
     line-height: 18px;
@@ -489,7 +498,9 @@
   }
 
   /*SORTING*/
-
+  .sorting {
+    text-transform: uppercase;
+  }
   .sorting__list {
     list-style: none;
     text-decoration: none;
@@ -512,13 +523,7 @@
   }
   /*SWITCH-PAGES*/
 
-  .switch-pages__list {
-    list-style: none;
-  }
-  .switch-pages_active {
-    background-color: var(--basic-red);
-  }
-  .switch-pages {
+  .switch-pages__list a {
     text-decoration: none;
     padding: 10px 15px;
     background-color: var(--basic-white);
@@ -527,7 +532,10 @@
     line-height: 18px;
     text-align: center;
     color: var(--basic-black);
-    padding: 10px 15px;
+    text-transform: uppercase;
+  }
+  .switch-pages_active {
+    background-color: var(--basic-red);
   }
   .switch-pages_next {
     padding: 10px 31px 10px 32px;
@@ -543,6 +551,7 @@
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-black);
+    text-transform: uppercase;
   }
   .puncher-information__text {
     font-family: PT Sans, Arial, sans-serif;
