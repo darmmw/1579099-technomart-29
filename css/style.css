@@ -24,15 +24,16 @@
   --basic-light-blue: #F2F6F8;
 
   }
-
   .page {
     height: 100%;
   }
   .page-body {
     min-height: 100%;
+    margin: 0;
   }
 
   /*HEADER*/
+
   .content-wrapper {
     width: 940px;
     margin: 0 auto;
@@ -46,12 +47,14 @@
   .logo {
     background-color: var(--basic-red);
     padding: 16px 56px;
+    line-height: 16px;
     display: flex;
     margin: 0;
     color: var(--basic-white);
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    align-self: flex-start;
   }
   .header__top {
     background-color: var(--basic-dark-blue);
@@ -72,6 +75,8 @@
   .header__selection {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
   .header__selection li {
     list-style: none;
@@ -81,6 +86,8 @@
     text-decoration: none;
     color: var(--basic-white);
     font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
   .header__selection_basket {
     margin-left: 50px;
@@ -282,6 +289,7 @@
     padding-left: 28px;
   }
   .popular__button {
+    text-decoration: none;
     background-color: var(--basic-red);
     color: var(--basic-white);
     font-size: 14px;
@@ -332,6 +340,7 @@
     text-decoration-line: line-through;
   }
   .product__item-price-button {
+    text-decoration: none;
     background-color: var(--basic-red);
     padding: 10px 44px 10px 32px;
     color: var(--basic-white);
@@ -349,6 +358,7 @@
   }
 
   /*POPULAR PROVIDERS*/
+
   .provider {
     margin-top: 20px;
   }
@@ -365,6 +375,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   /*SERVICE*/
 
   .service {
@@ -478,7 +489,7 @@
   .footer__top {
     background-color: var(--basic-dark-gray);
     min-height: 193px;
-    margin: 0;
+    margin-left: 128px;
   }
   .footer__address {
     font-size: 16px;
@@ -491,12 +502,12 @@
     align-items: center;
   }
   .footer__nav-list1 li {
-    margin-left: 173px;
+    margin-left: 58px;
     display: flex;
     justify-content: space-between;
   }
   .footer__nav-list2 li {
-    margin-left: 92px;
+    margin-left: 58px;
     display: flex;
     justify-content: space-between;
   }
@@ -508,6 +519,7 @@
   }
   .footer__nav-row2 {
     display: flex;
+    justify-content: space-between;
   }
   .footer__nav-list {
     list-style: none;
@@ -530,7 +542,7 @@
     display: flex;
   }
   .footer__down {
-    margin: 0;
+    margin-left: 129px;
     background-color: var(--basic-dark-blue);
     min-height: 107px;
   }
