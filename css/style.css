@@ -36,7 +36,8 @@
 
   .content-wrapper {
     width: 940px;
-    margin: 0 130px;
+    margin: 0 auto;
+
   }
   .visually-hidden {
     display: none;
