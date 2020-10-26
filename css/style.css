@@ -36,7 +36,7 @@
 
   .content-wrapper {
     width: 940px;
-    margin: 0 auto;
+    margin: 0 130px;
   }
   .visually-hidden {
     display: none;
@@ -789,7 +789,7 @@
   /*PRODUCT-CATALOG*/
 
   .product-catalog {
-    padding: 28px 0 48px 0;
+    padding: 28px 0 58px 0;
     display: grid;
     grid-template-columns: repeat(3, 220px);
     grid-template-rows: repeat(3, 318px);
@@ -840,12 +840,16 @@
 
   .switch-pages__list a {
     text-decoration: none;
-    margin-right: 20px;
+    padding-top: 10px;
+  }
+  .switch-pages__list a:not(:last-child) {
+    margin-right: 8px;
   }
   .switch-pages {
     display: flex;
+    flex-wrap: wrap;
   }
-  .switch-pages__button {
+  .switch-pages__item {
     font-family: PT Sans. sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -854,11 +858,12 @@
     padding: 10px 15px;
     background-color: var(--basic-white);
   }
-  .switch-pages__button_active {
+  .switch-pages__item_active {
     background-color: var(--basic-red);
+    color: var(--basic-white);
     padding: 10px 15px;
   }
-  .switch-pages__button_next {
+  .switch-pages__item_next {
     padding: 10px 31px 10px 32px;
   }
 
@@ -868,7 +873,7 @@
     background-color: var(--basic-background);
   }
   .puncher-information {
-    padding: 68px 0 72px 0;
+    padding: 78px 0 72px 0;
   }
   .puncher-information__name {
     font-family: Cuprum, Arial, sans-serif;
@@ -876,7 +881,7 @@
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
-    margin: 0 0 20px 0;
+    margin: 0 0 24px 0;
   }
   .puncher-information__text {
     margin: 0;
