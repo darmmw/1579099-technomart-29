@@ -13,16 +13,16 @@
         <div class="content-wrapper">
           <div class="header__top-content">
             <a class="logo" href="index.html">Техномарт</a>
-            <p class="header__search">
-              <input type="search" placeholder="Поиск:">
-            </p>
+            <div class="header__search-wrapper">
+              <input type="search" class="header__search" placeholder="Поиск:">
+            </div>
             <ul class="header__selection">
-              <li class="header__selection-like">
-                <a href="blank.html" class="header__selection_item">Закладки: 0</a></li>
-              <li class="header__selection-basket header__selection-basket_red">
-                <a href="blank.html" class="header__selection_item">Корзина: 10</a></li>
-              <li class="header__selection-order header__selection-order-catalog">
-                <a href="blank.html" class="header__selection_item header__selection-order_button">Оформить заказ</a></li>
+              <li class="header__selection_item">
+                <a href="blank.html" class="header__selection_item-like">Закладки: 0</a></li>
+              <li class="header__selection_item">
+                <a href="blank.html" class="header__selection_item-basket-red">Корзина: 10</a></li>
+              <li class="header__selection_item">
+                <a href="blank.html" class="header__selection_item-order">Оформить заказ</a></li>
             </ul>
           </div>
         </div>
@@ -42,8 +42,8 @@
             <div class="header__client">
               <p class="header__client-name">Равшан Джамшутович</p>
               <div class="header__client-button">
-                <p>Мои заказы</p>
-                <p>Личный кабинет</p>
+                <a href="blank.html">Мои заказы</a>
+                <a href="blank.html">Личный кабинет</a>
               </div>
             </div>
           </div>
@@ -64,51 +64,77 @@
     <main class="main-catalog">
       <div class="content-wrapper">
         <div class="page-nav">
-          <a href="blank.html" class="page-nav__item">Каталог</a>
-          <a href="blank.html" class="page-nav__item">Инструмент</a>
-          <a class="page-nav__item">Перфораторы</a>
+          <ul>
+            <li><a href="blank.html" class="page-nav__item">Каталог</a></li>
+            <li><a href="blank.html" class="page-nav__item">Инструмент</a></li>
+            <li><a class="page-nav__item">Перфораторы</a></li>
+          </ul>
         </div>
       </div>
       <div class="content-wrapper">
         <div class="punchers">
-          <p>Перфораторы</p>
+          <h3>Перфораторы</h3>
         </div>
       </div>
       <div class="content-wrapper">
         <div class="main-container">
           <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--<h3 class="filter__name">фильтр:</h3>
-            <div class="filter__item">цена:</div>
+            <h3 class="filter__name">фильтр:</h3>
+            <div class="price-range-wrapper">
+               <fieldset class="filter__item">
+                 <legend>Цена:</legend>
+                 <div class="range-filter">
+                   <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                   </div>
+                   <div class="price-controls">
+                    <label class="min-price">
+                      <input class="min-price-input" type="number" name="min-price" value="0">
+                    </label>
+                    <p class="price-controls-range">—</p>
+                    <label class="max-price">
+                      <input class="max-price-input" type="number" name="max-price" value="30000">
+                    </label>
+                   </div>
+                 </div>
+               </fieldset>
+             </div>
             <div class="filter__item">призводители:</div>
             <div class="filter__item_provider">
-              <p><img src="img/checkbox-on.svg">bosch</p>
-              <p><img src="img/checkbox-off.svg">интерскол</p>
-              <p><img src="img/checkbox-on.svg">makita</p>
-              <p><img src="img/checkbox-off.svg">dewalt</p>
-              <p><img src="img/checkbox-off.svg">hitachi</p>
+              <p>bosch</p>
+              <p>интерскол</p>
+              <p>makita</p>
+              <p>dewalt</p>
+              <p>hitachi</p>
             </div>
             <div class="filter__item">питание:</div>
             <div class="filter__item_energy">
-              <p><img src="img/radio-on.svg">аккумуляторные</p>
-              <p><img src="img/radio-off.svg" alt="">сетевые</p>
+              <p>аккумуляторные</p>
+              <p>сетевые</p>
             </div>
-            <a href="blank.html" class="filter__button">показать</a>-->
+            <a href="blank.html" class="filter__button">показать</a>
           </section>
           <section class="sorting-container">
             <h2 class="visually-hidden">Список товаров</h2>
             <div class="sorting">
               <p class="sorting-name">Сортировка</p>
                 <div class="sorting__list">
-                  <a href="blank.html" class="sorting__item sorting__item_red ">По цене</a>
-                  <a href="blank.html" class="sorting__item sorting__item_tipe">По типу</a>
-                  <a href="blank.html" class="sorting__item">По функционалу</a>
+                  <ul>
+                    <li><a href="blank.html" class="sorting__item sorting__item_red ">По цене</a></li>
+                    <li><a href="blank.html" class="sorting__item sorting__item_tipe">По типу</a></li>
+                    <li><a href="blank.html" class="sorting__item">По функционалу</a></li>
+                  </ul>
                 </div>
               </div>
               <div class="product-catalog">
                 <div class="product__item">
                   <a href="blank.html" class="product__item-card">
-                    <p  class="product__item-img product__item-img-cat1">
+                    <p class="product__item-img product__item-img-cat1">
                       <img src="img/snippet-945.jpg" alt="Перфоратор BOSCH BFG 6000">
                     </p>
                     <h3 class="product__item-name">Перфоратор BOSCH <br> BFG 6000</h3>
@@ -281,13 +307,13 @@
               </ul>
             </div>
             <div class="footer__feedback footer__feedback_link">
-              <p>  Обратная связь: </p>
+              <p>Обратная связь:</p>
               <address>
                 <a class="footer__feedback-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </address>
             </div>
             <div class="footer__feedback footer__feedback_dev">
-              <p> Разработано - </p>
+              <p>Разработано -</p>
               <a class="footer__feedback-address" href="https://htmlacademy.ru">htmlacademy.ru</a>
             </div>
           </div>
