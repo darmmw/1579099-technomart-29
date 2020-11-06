@@ -277,10 +277,8 @@
     top: 6px;
     left: 86px;
   }
-  .header__client-button-order:hover::after {
-    background-color: var(--basic-red);
-  }
-  .header__client-button-order:hover {
+  .header__client-button-order:hover,
+  .header__client-button-account:hover {
     color: var(--basic-red);
   }
   .header__client-button a:active {
@@ -447,7 +445,7 @@
     font-family: Cuprum, Arial, sans-serif;
     padding-top: 59px;
   }
-  .card__section span {
+  .card__section-title {
     text-decoration: none;
     color: var(--basic-white);
   }
@@ -573,7 +571,7 @@
     background-color: var(--basic-light-orange-button);
     padding: 10px 36px;
   }
-  .card__section-title {
+  .card__section-big-title {
     background-color: var(--basic-gray);
     padding: 22px 23px 18px 23px;
   }
@@ -603,9 +601,6 @@
     line-height: 24px;
     margin: 6px 0 0 0;
   }
-  .card__section-big-button {
-
-  }
   .card__section-big-button_red {
     background-color: var(--basic-red);
     color: var(--basic-white);
@@ -617,6 +612,7 @@
     display: inline-block;
     text-decoration: none;
     margin: 94px 0 0 24px;
+    width: 100px;
   }
   .card__section-big-button_red:hover,
   .popular__button:hover,
@@ -1352,8 +1348,6 @@
   }
   .filter__button {
     font-family: PT Sans, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 79px 10px 78px;
@@ -1393,8 +1387,6 @@
   .sorting__item-cursor-up::before {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 0;
     width: 11px;
     height: 10px;
     background-image: url("../img/cursor-up-icon.svg");
@@ -1605,7 +1597,6 @@
     background-color: var(--basic-red);
     text-transform: uppercase;
     color: var(--basic-white);
-    border: none;
     font-family: Cuprum, sans-serif;
     font-size: 14px;
     line-height: 24px;
