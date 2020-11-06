@@ -98,7 +98,7 @@
   }
   .header__search {
     background-color: var(--basic-dark-blue);
-    padding: 14px 29px 13px 40px;
+    padding: 12px 70px 12px 40px;
     border: none;
   }
   .header__search-wrapper::before {
@@ -447,7 +447,7 @@
     font-family: Cuprum, Arial, sans-serif;
     padding-top: 59px;
   }
-  .card__section a {
+  .card__section span {
     text-decoration: none;
     color: var(--basic-white);
   }
@@ -604,8 +604,7 @@
     margin: 6px 0 0 0;
   }
   .card__section-big-button {
-    margin-top: auto;
-    margin-left: 24px;
+
   }
   .card__section-big-button_red {
     background-color: var(--basic-red);
@@ -616,6 +615,8 @@
     padding: 11px 46px 9px;
     text-transform: uppercase;
     display: inline-block;
+    text-decoration: none;
+    margin: 94px 0 0 24px;
   }
   .card__section-big-button_red:hover,
   .popular__button:hover,
@@ -807,7 +808,7 @@
 
   .service {
     background-color: var(--basic-background);
-    padding: 64px 0 64px 0;
+    padding: 64px 0 60px 0;
     margin-bottom: 70px;
   }
   .service__name-service {
@@ -885,7 +886,7 @@
     grid-template-columns: 460px 340px;
     grid-template-rows: 1fr;
     gap: 180px;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
   .company__name {
     font-size: 30px;
@@ -1638,7 +1639,7 @@
     border: none;
   }
   .modal-basket {
-    display: none
+    display: none;
     width: 620px;
     height: 282px;
   }
