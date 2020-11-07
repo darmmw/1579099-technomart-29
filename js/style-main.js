@@ -8,9 +8,6 @@ const linkMessage = linkPopup.querySelector(".modal-link__form-message");
 const mapLink = document.querySelector(".company__contact-card");
 const mapPopup = document.querySelector(".modal-map");
 const mapClose = mapPopup.querySelector(".modal-close");
-const basketLink = document.querySelector(".product__item-price-button");
-const basketPopup = document.querySelector(".modal-basket");
-const basketClose = basketPopup.querySelector(".modal-close");
 
 let isStorageSupport = true;
 let storage = "";
@@ -77,25 +74,6 @@ window.addEventListener("keydown", function (evt) {
     if (mapPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       mapPopup.classList.remove("modal-show");
-    }
-  }
-});
-
-basketLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.add("modal-show");
-});
-
-basketClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (basketPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      basketPopup.classList.remove("modal-show");
     }
   }
 });
