@@ -270,8 +270,8 @@
           <p class="company__description company__description-card">Вы можете забрать товар сами, <br>
             Заехав в наш офис:
           </p>
-          <p class="company__contact-card"> <img src="img/map.jpg" alt="Наш адрес на карте"> </p>
-          <a class="company__button company__button-contacts">Заблудились? напишите нам!</a>
+          <a class="company__contact-card" href="blank.html"><img src="img/map.jpg" alt="Наш адрес на карте"></a>
+          <a class="company__button company__button-contacts" href="blank.html">Заблудились? напишите нам!</a>
         </div>
       </div>
     </div>
@@ -347,7 +347,7 @@
     </footer>
     <section class="modal modal-link">
       <h2 class="visually-hidden">Форма для заявки</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="link-form" action="https://echo.htmlacademy.ru" method="get">
         <div class="modal-link-row-wrapper">
           <label class="modal-link__name">Ваше имя:<input type="text" name="name" id="name-field" class="modal-link__form-name" placeholder="Имя Фамилия"></label>
           <label class="modal-link__name">Ваш e-mail:<input class="modal-link__form-email" type="text" name="email" id="email-field" placeholder="email@example.com"></label>
@@ -361,8 +361,9 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Адрес магазина на карте</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715841595!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604590914443!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адрксу ул. Большая Конюшенная 19/8"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715841595!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604590914443!5m2!1sru!2sru" class="modal-map-open" width="943" height="449" allowfullscreen title="Офис компании по адрксу ул. Большая Конюшенная 19/8"></iframe>
       <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
+    <script src="js/modal.js"></script>
   </body>
 </html>

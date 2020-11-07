@@ -937,8 +937,8 @@
   .company__description-card {
     margin-bottom: 32px;
   }
-  .company__contact-card {
-    margin-bottom: 24px;
+  .company__contact-card img{
+    margin-bottom: 20px;
   }
   .company__button {
     text-decoration: none;
@@ -1231,6 +1231,14 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+  .filter__item-input-checkbox:disabled + label::before,
+  .filter__item-input-radio:disabled + label::before {
+    opacity: 0.3;
+  }
+  .filter__item-input-checkbox:disabled + label,
+  .filter__item-input-radio:disabled + label {
+    color: var(--basic-gray2);
+  }
   .filter__item_provider p {
     margin: 0 0 20px 0;
   }
@@ -1447,7 +1455,7 @@
   /*PRODUCT-CATALOG*/
 
   .product-catalog {
-    padding: 28px 0 58px 0;
+    padding: 28px 0 47px 0;
     display: grid;
     grid-template-columns: repeat(3, 220px);
     grid-template-rows: repeat(3, 318px);
@@ -1460,16 +1468,19 @@
 
   /*SWITCH-PAGES*/
 
-  .switch-pages__list a {
-    text-decoration: none;
-    padding-top: 10px;
-  }
-  .switch-pages__list a:not(:last-child) {
-    margin-right: 5px;
-  }
-  .switch-pages {
+  .switch-pages__list {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .switch-pages__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .switch-pages__item a {
+    text-decoration: none;
+    color: var(--basic-black);
   }
   .switch-pages__item {
     font-family: PT Sans, sans-serif;
@@ -1486,11 +1497,12 @@
   }
   .switch-pages__item:active {
     border: solid 1px var(--basic-red);
+    color: var(--basic-white);
   }
   .switch-pages__item_active {
     background-color: var(--basic-red);
-    color: var(--basic-white);
     padding: 10px 15px;
+    border-radius: 10%;
   }
   .switch-pages__item_next {
     padding: 10px 31px 10px 32px;
@@ -1502,7 +1514,7 @@
     background-color: var(--basic-background);
   }
   .puncher-information {
-    padding: 78px 0 72px 0;
+    padding: 70px 0 68px 0;
   }
   .puncher-information__name {
     font-family: Cuprum, Arial, sans-serif;
@@ -1624,7 +1636,6 @@
     display: none;
     width: 943px;
     height: 449px;
-
   }
   .modal-map iframe {
     border: none;
@@ -1673,4 +1684,52 @@
     background-color: var(--basic-white);
     padding: 11px 31px 9px 32px;
     border: none;
+  }
+  .modal-show {
+    display: block;
+    animation: bounce 0.6s;
+  }
+  .modal-error {
+    animation: shake 0.6s;
+  }
+
+  /*ANOMATIONS*/
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+
+    70% {
+      transform: translateY(30px);
+    }
+
+    90% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+    @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
   }

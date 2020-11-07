@@ -111,7 +111,6 @@
                  </div>
                </fieldset>
              </div>
-             <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
              <fieldset class="filter__item">
                <legend>прoизводители:</legend>
                  <ul class="filter__item_provider">
@@ -120,7 +119,7 @@
                      <label for="filter__item-bosch">bosch</label>
                    </li>
                    <li class="filter__item-option filter__item-checkbox">
-                     <input class="visually-hidden filter__item-input-checkbox filter__item-input" type="checkbox" name="interskol" id="filter__item-interskol">
+                     <input class="visually-hidden filter__item-input-checkbox filter__item-input" type="checkbox" name="interskol" id="filter__item-interskol" disabled>
                      <label for="filter__item-interskol">интерскол</label>
                    </li>
                    <li class="filter__item-option filter__item-checkbox">
@@ -128,11 +127,11 @@
                      <label for="filter__item-makita">makita</label>
                    </li>
                    <li class="filter__item-option filter__item-checkbox">
-                     <input class="visually-hidden filter__item-input-checkbox filter__item-input" type="checkbox" name="dewalt" id="filter__item-dewalt">
+                     <input class="visually-hidden filter__item-input-checkbox filter__item-input" type="checkbox" name="dewalt" id="filter__item-dewalt" disabled>
                      <label for="filter__item-dewalt">dewalt</label>
                    </li>
                    <li class="filter__item-option filter__item-checkbox">
-                     <input class="visually-hidden filter__item-input-checkbox filter__item-input" type="checkbox" name="hitachi" id="filter__item-hitachi">
+                     <input class="visually-hidden filter__item-input-checkbox filter__item-input" type="checkbox" name="hitachi" id="filter__item-hitachi" disabled>
                      <label for="filter__item-hitachi">hitachi</label>
                    </li>
                 </ul>
@@ -145,7 +144,7 @@
                    <label for="filter__item-rechargeable">аккумуляторные</label>
                  </li>
                  <li class="filter__item-option filter__item-radio">
-                   <input class="visually-hidden filter__item-input-radio filter__item-input" type="radio" name="product-group" value="networking" id="filter__item-networking">
+                   <input class="visually-hidden filter__item-input-radio filter__item-input" type="radio" name="product-group" value="networking" id="filter__item-networking" disabled>
                    <label for="filter__item-networking">сетевые</label>
                  </li>
                </ul>
@@ -276,12 +275,12 @@
                 </div>
               </div>
               <div class="switch-pages">
-                <div class="switch-pages__list">
-                  <a class="switch-pages__item switch-pages__item_active">1</a>
-                  <a class="switch-pages__item">2</a>
-                  <a class="switch-pages__item">3</a>
-                  <a class="switch-pages__item switch-pages__item_next">Следующая</a>
-                </div>
+                <ul class="switch-pages__list">
+                  <li class="switch-pages__item switch-pages__item_active"><a href="blank.html">1</a></li>
+                  <li class="switch-pages__item"><a href="blank.html">2</a></li>
+                  <li class="switch-pages__item"><a href="blank.html">3</a></li>
+                  <li class="switch-pages__item switch-pages__item_next"><a href="blank.html">Следующая</a></li>
+                </ul>
               </div>
             </section>
           </div>
@@ -377,5 +376,6 @@
       </div>
       <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
+    <script src="js/modal.js"></script>
   </body>
 </html>
