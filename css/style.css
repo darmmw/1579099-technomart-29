@@ -636,6 +636,7 @@
     padding: 11px 46px 9px;
     text-transform: uppercase;
     display: inline-block;
+    vertical-align: bottom;
     text-decoration: none;
     margin: 94px 0 0 24px;
     width: 100px;
@@ -844,7 +845,7 @@
     text-transform: uppercase;
     margin: 0;
   }
-  .service__name-delivery {
+  .service__name {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -853,6 +854,12 @@
     color: var(--basic-dark-gray);
   }
   .service-delivery {
+    position: relative;
+  }
+  .service-guarantee {
+    position: relative;
+  }
+  .service-credit {
     position: relative;
   }
   .service-delivery::after {
@@ -864,7 +871,61 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     top: 18px;
-    left: 150px;
+    left: 180px;
+  }
+  .service-guarantee::after {
+    content: "";
+    position: absolute;
+    width: 389px;
+    height: 283px;
+    background-image: url("../img/guarantee.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 200px;
+    top: 0;
+  }
+  .service-credit::after {
+    content: "";
+    position: absolute;
+    width: 465px;
+    height: 225px;
+    background-image: url("../img/credit.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -6px;
+    left: 180px;
+  }
+  .service-credit-button {
+    font-family: Cuprum, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    width: 212px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+  }
+  .service__phrase-delivery {
+    font-family: PT Sans, Arial, sans-serif;
+    color: var(--basic-black);
+    font-size: 13px;
+    line-height: 24px;
+    margin: 28px 0 70px 0;
+  }
+  .service__phrase-guarantee {
+    font-family: PT Sans, Arial, sans-serif;
+    color: var(--basic-black);
+    font-size: 13px;
+    line-height: 24px;
+    margin: 28px 0 70px 0;
+  }
+  .service__phrase-credit {
+    font-family: PT Sans, Arial, sans-serif;
+    color: var(--basic-black);
+    font-size: 13px;
+    line-height: 24px;
+    margin: 28px 0 20px 0;
   }
   .service__phrase {
     font-family: PT Sans, Arial, sans-serif;
