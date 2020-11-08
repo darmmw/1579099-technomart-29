@@ -1,11 +1,13 @@
-const basketLink = document.querySelector(".product__item-price-button");
+const basketLinks = document.querySelectorAll(".product__item-focus-button-buy");
 const basketPopup = document.querySelector(".modal-basket");
 const basketClose = basketPopup.querySelector(".modal-close");
 
-basketLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.add("modal-show");
-});
+for (let basketLink of basketLinks) {
+  basketLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.add("modal-show")
+  })
+};
 
 basketClose.addEventListener("click", function (evt) {
   evt.preventDefault();

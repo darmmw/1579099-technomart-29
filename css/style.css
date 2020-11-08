@@ -591,9 +591,35 @@
     padding: 0 0 28px 0;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
-  .card__section-big-gray {
+  .card__section-big-gray-snippet {
     background-image: url("../img/snippet-man.jpg");
+  }
+  .card__section-big-gray-drill {
+    background-image: url("../img/drill-man.jpg");
+  }
+  .card__section-big-gray::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    background-image: url("../img/icon-left.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 121px;
+    left: 24px;
+  }
+  .card__section-big-gray::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    background-image: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 121px;
+    left: 578px;
   }
   .card__section-big-phrase {
     color: var(--basic-white);
@@ -707,6 +733,9 @@
     background-position: 0 0;
     left: 40px;
     top: 0;
+  }
+  .product__item-catalog:hover .product__item-new::before {
+    top: -180px;
   }
   .product__item-img {
     background-color: var(--basic-light-gray);
@@ -1464,6 +1493,52 @@
   }
   .product__item-price-button_real {
     margin-top: 44px;
+  }
+  .product__item-focus-button-buy {
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    border: none;
+    width: 135px;
+    height: 38px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .product__item-focus-button-buy::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/basket-icon.svg");
+    opacity: 0.3;
+    left: 70px;
+  }
+  .product__item-focus-button-fav {
+    color: var(--basic-dark-blue);
+    border: 3px solid var(--basic-green);
+    background-color: var(--basic-white);
+    width: 135px;
+    height: 38px;
+    text-transform: uppercase;
+  }
+  .product__item-focus-button {
+    margin: 38px 0 54px 0;
+    border-radius: 2px;
+    font-family: Cuprum, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    align-items: center;
+    display: none;
+    position: relative;
+    display: none;
+  }
+  .product__item-catalog:hover .product__item-img {
+    display: none;
+  }
+  .product__item-catalog:hover .product__item-focus-button {
+    display: block;
   }
 
   /*SWITCH-PAGES*/
