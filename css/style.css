@@ -470,6 +470,9 @@
     padding: 20px 20px 6px 22px;
     position: relative;;
   }
+  .card__section a {
+    text-decoration: none;
+  }
   .card__section::after,
   .card__section::before {
     content: "";
@@ -741,7 +744,7 @@
   .product__item-new::before{
     content: "";
     position: absolute;
-    width: 100px;
+    width: 72px;
     height: 68px;
     background-image: url("../img/new.png");
     background-repeat: no-repeat;
