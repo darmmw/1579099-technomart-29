@@ -745,7 +745,7 @@
   .product__item-new::before{
     content: "";
     position: absolute;
-    width: 72px;
+    width: 69px;
     height: 68px;
     background-image: url("../img/new.png");
     background-repeat: no-repeat;
@@ -991,9 +991,9 @@
   }
   .company-content {
     display: grid;
-    grid-template-columns: 460px 300px;
+    grid-template-columns: 460px 290px;
     grid-template-rows: 1fr;
-    gap: 180px;
+    gap: 178px;
     margin-bottom: 69px;
   }
   .company__name {
@@ -1067,7 +1067,7 @@
   }
   .company__button-contacts {
     display: block;
-    width: 180px;
+    width: 177px;
     padding: 11px 61px 9px 61px;
   }
 
