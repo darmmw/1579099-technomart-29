@@ -45,6 +45,7 @@
   .page-body {
     min-height: 100%;
     margin: 0;
+    min-width: 940px;
   }
 
   /*HEADER*/
@@ -1541,7 +1542,7 @@
     color: var(--basic-black);
     opacity: 0.3;
     text-decoration: none;
-    border-bottom: 1px dotted red;
+    border-bottom: 1px dotted var(--basic-red);
   }
   .sorting__item_active {
     color: var(--basic-red);
